@@ -1,0 +1,7 @@
+BrightTag.site('6sinWUJ',function(s){
+s.dbe('referrer', 'document.referrer',{pageId:3531394});
+s.dbe('url', 'document.URL',{pageId:3531394});
+s.domready(function(){
+s.tag('\x3cscript type\x3d\x22text/javascript\x22\x3e\n        (function(){\n          var url \x3d new BrightTag.HTTP.URL(\x27https://b0.yahoo.co.jp/b\x27)\n            .appendParam(\x22_a\x22, "989732".replace(/^\\s+|\\s+$/g, \x27\x27))\n            .appendParam(\x22_d\x22, "0001".replace(/^\\s+|\\s+$/g, \x27\x27))\n            .appendParam(\x22_r\x22, 1174305357);\n          BrightTag.each([{key:"url",value:'+s.dataref("url")+'},{key:"referrer",value:'+s.dataref("referrer")+'}], function(param) {\n            url.appendParam(param.key, param.value);\n          });\n          url.appendParam(\x22_s\x22, url.toString().match(/.+\\?(.*)/)[1].length.toString(16));\n          BrightTag.Content.image(url);\n        })();\n      \x3c/script\x3e',{tagId:6228469});
+});
+});

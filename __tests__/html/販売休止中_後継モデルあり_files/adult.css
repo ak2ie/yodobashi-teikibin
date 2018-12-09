@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*============================================================
+common
+============================================================*/
+.colL {
+	float: left;
+}
+
+.colR {
+	float: right;
+}
+
+
+
+/*============================================================
+adult
+============================================================*/
+#adultAgeCover {
+	width: 600px;
+	text-align: center;
+	margin-left : auto ; margin-right : auto ;
+}
+
+.adultSearchbox {
+    background: url(../img/pinkgrad.gif) repeat-x scroll left top #FF7091;
+    margin-bottom: 10px;
+}
+
+.adultRedLine {
+    color:#F00;
+	font-size: 2.5em;
+	border: 2px #F00 solid;
+	text-align: center;
+	padding: 7px 0 7px 0;
+	margin: 50px 0 0 0;
+	font-weight: bold;
+}
+
+.adultAgeLimit {
+	font-size: 1.5em;
+	margin: 20px 10px 10px 10px;
+}
+
+.adultSelect {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: 20px 0 20px 0;
+}
+
+.adultAgeAccess {
+	width: 240px;
+	margin: 0 auto;
+}
+
+.adultAge {
+	width: 60px;
+	height: 30px;
+}
+
+#adultDivision {
+	float: right;
+	width: 734px;
+}
+
+.adultHeadlineFlame {
+	width: 490px;
+	float: left;
+}
+
+.adultHeadline {
+	margin: 0 0 20px 0;
+	width: 490px;
+	background-image: url(../img/headline.png);
+	height: 30px;
+	background-repeat:no-repeat;
+}
+
+.adultHeadLintext {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 1.3em;
+	width: 146px;
+	height: 30px;
+	text-align: center; 
+	line-height: 30px;
+}
+
+.adultPoint {
+	position: relative;
+	width: 146px;
+	height: 29px;
+}
+
+.adultText {
+	position: absolute;
+	width: 146px;
+	height: 29px;
+}
+
+.adultRankingCover {
+	float: right;
+	width: 220px;
+}
+
+.adultBody {
+    padding: 25px 0 50px 0;
+    width: 490px;
+}
+
+.adultTopCover {
+	display: inline-block;
+	*display: inline;
+    *zoom: 1;
+    font-size: 1.2em;
+    margin: 0 20px 20px 20px;
+    vertical-align: top;
+    width: 120px;
+	word-wrap: break-word;
+}
+
+.adultListPage {
+	text-align: right;
+    font-size: 1.2em;
+	margin: 0 0 20px 0 ;
+	padding: 20px 20px 0 0;
+	vertical-align: bottom;
+}
+
+.adultImgCover {
+	margin: 0 0 10px;
+    text-align: center;
+}
+
+.adultIcon {
+	margin: 0 0 5px 0;
+}
+
+.adultRate {
+    margin: 0 0 2px 0;
+	width: 120;
+	clear: none;
+}
+
+.adultrecUrCount {
+	font-size: 0.9em;
+}
+
+.adultRankingBody {
+	width: 220px;
+	border: 1px solid #CCC;
+    margin: 0 0 10px 0;
+}
+	
+.adultRankingFlame {
+	width: 220px;
+}
+
+.adultNumberFrame {
+	width: 210px;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 10px 0 5px 10px;
+	color:#F69;
+}
+
+.adultImgRanking {
+	float: left;
+	padding: 0 7px 0 10px;
+}
+
+.adultRankingIcon {
+	float: right;
+	width: 150px;
+	text-align: left;
+}
+
+.adultRankingTittle {
+	float: right;
+	text-align: left;
+	width: 140px;
+	font-size: 1.2em;
+	padding: 5px 10px 0 0;
+}
+
+.adultRankingRate {
+	float: right;
+	text-align:left;
+	width :140px;
+	display: inline;
+}
+
+.adultFlameOut {
+	font-size: 1.2em;
+	width: 200px;
+	margin: 10px 10px 0 10px;
+	line-height: 1.3;
+}
+
+.adultFlameOut table {
+	border-collapse: collapse;
+}
+
+.adultRankingBodyB {
+	margin: 10px 0 0 0;
+	border: 1px solid #CCC;
+}
+
+.adulitRankingNumber {
+	float: right;
+	width: 123px;
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 0 5px 5px;
+	color:#F69;
+}
+
+.rankingFlameB {
+	width: 210px;
+	padding: 10px 10px 10px 0;
+}
+
+.adultClear {
+	clear:both; 
+}  
+
+.adultClear hr {
+	display:none;
+} 
+
+.adultRankingOut {
+	padding: 10px 0 10px 0 ;
+	text-align: right;
+}
+
+.adultRnkingOrder {
+	font-weight: bold;
+	padding: 0 10px 0 0;
+	vertical-align: top;
+}
+
+.adultRankingConsidence {
+	width: 220px;
+	height: 25px;
+	background-image: url(../img/ranking1.png);
+	background-repeat:no-repeat;
+	margin: 0 0 10px 0;
+}
+
+.adultRankingSales {
+	width: 220px;
+	height: 25px;
+	background-image: url(../img/ranking2.png);
+	background-repeat:no-repeat;
+	margin: 0 0 10px 0;
+}
+
+.adultRankingReserve {
+	width: 220px;
+	height: 25px;
+	background-image: url(../img/ranking3.png);
+	background-repeat:no-repeat;
+	margin: 0 0 10px 0;
+}
+
+.adultRankingText {
+	font-weight: bold;
+	color: #FFF;
+	font-size: 1.2em;
+	width: 220px;
+	height: 25px;
+	text-align: center;  
+	line-height: 25px;
+}
+
+.adultIntroductionFrameLine {
+	width: 490;
+}
+
+.adultBannerFrame {
+	padding: 10px 0 30px;
+}
+
+
+.adultIntroduction {
+	height: auto;
+	width: 468px;
+	line-height: 17px;
+	padding: 10px;
+	margin: 0 0 20px 0;
+	background: #ffe6e6;
+	border: #f7abab 1px solid;
+	color: #fa446c;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+.adultIntroductionFrame {
+	widows: 490px;
+	margin: 0 0 40px 0;
+}
+
+.adultIntroductionImg {
+	width: 250px;
+	float: left;
+	clear: none;
+}
+
+.adultIntroductionText {
+	width: 230px;
+	height: auto;
+	float:right;
+	font-size: 1.2em;
+	clear: none;
+	padding: 0 0 0 10px;
+}
+
+.adultIntroductionPoint {
+	line-height: 17px;
+	margin: 10px 0 0 0;
+}
+
+.adultIntroductionOut {
+	width:15px;
+	height:15px;
+	float: left;
+	margin: 0 10px 0 0;
+
+}
+
+.adultIntroductionData {
+	width: 130px;
+	margin: 0 0 0 10px;
+
+}
+
+.adultSoftReview {
+	width: 210px;
+	margin: 0 0 10px;
+}
+.adultReview{
+	width: 188px;
+	border: #CCC solid 1px;
+	float: left;
+	padding: 10px;
+}
+
+.adultReviewTittle{
+    font-size: 1.18em;
+    font-weight: bold;
+	margin: 0 0 10px;
+}	
+
+.adultReviewFream{
+	width: 188px;
+	border-bottom: 1px dotted #E8E8E8;
+	padding: 10px 0;
+}
+
+.adultReviewLeft{
+    float: left;
+    height: 60px;
+    width: 60px;
+}
+
+.adultReviewRight{
+	float: right;
+    width: 118px;
+}
+
+.adultReviewStar{
+}
+
+.adultReviewDate{
+	color: #999999;
+    font-size: 1.12em;
+	padding: 5px 0 0 0;
+}
+
+.adultReviewTxt{
+	font: 1.12em;
+}
+
+.adultHlNavigation{
+	float: right;
+	width: 188px;
+    text-align: right;
+	margin: 10px 0 5px 0;
+	font: 1.12em;
+}

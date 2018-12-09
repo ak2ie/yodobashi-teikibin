@@ -1,0 +1,454 @@
+@charset "utf-8";
+
+* {
+font-style: normal;
+margin: 0;
+padding: 0;
+}
+
+html,body {
+height: 100%;
+}
+
+body {
+background: #FFF;
+color: #333435;
+font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif, arial, verdana, Helvetica, Verdana, "Droid Sans", Arial;
+_font-family: "ＭＳ Ｐゴシック", "Hiragino Kaku Gothic Pro", Osaka, arial, sans-serif, verdana;
+font-size: 62.5%;
+line-height: 1.4;
+min-width: 1000px;
+overflow-y: scroll;
+text-align: left;
+/overflow-y: visible;
+word-break: break-all;
+word-wrap: break-word;
+-webkit-text-size-adjust: none;
+}
+
+h1 {
+font-size: 28px;
+font-weight: normal;
+line-height: 1.2;
+}
+
+h2 {
+font-size: 20px;
+font-weight: normal;
+line-height: 1.2;
+}
+
+h3 {
+font-size: 16px;
+font-weight: normal;
+line-height: 1.2;
+}
+
+h4 {
+font-weight: normal;
+font-size: 14px;
+}
+
+h5 {
+font-size: 13px;
+font-weight: normal;
+}
+
+h6 {
+font-size: 12px;
+font-weight: normal;
+}
+
+ul,li {
+list-style-type: none;
+}
+
+table,td,th {
+border: none;
+text-align: left;
+vertical-align: top;
+}
+
+table {
+border-collapse: collapse;
+border-spacing: 0;
+word-wrap: break-word;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote {
+margin: 0;
+padding: 0;
+}
+
+img, a img {
+border: none;
+}
+
+strong {
+font-weight: bold;
+}
+
+input,select,textarea {
+font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Osaka, sans-serif, arial, verdana;
+font-size: 12px;
+outline: none;
+vertical-align: middle;
+}
+
+label {
+cursor: pointer;
+vertical-align: middle;
+}
+
+fieldset {
+border: 0;
+}
+
+input::-webkit-input-placeholder {
+color: #999;
+}
+
+input:-moz-placeholder {
+color: #999;
+}
+
+.clearfix:after {
+content: " ";
+clear: both;
+display: block;
+height: 0;
+visibility: hidden;
+}
+
+.clearfix {
+zoom: 1;
+}
+
+.clear {
+clear: both;
+font-size: 0;
+height: 0;
+line-height: 0;
+margin: 0;
+padding: 0;
+}
+
+
+a,a:link,a:visited {
+color: #0D6295;
+cursor: pointer;
+outline: none;
+text-decoration: underline;
+}
+
+a:hover,a:active {
+color: #F00;
+text-decoration: underline;
+}
+
+a img {
+text-decoration: none;
+}
+
+a:hover img {
+}
+
+
+#wrapper {
+margin: 0 auto;
+min-width: 1000px;
+width: 100%;
+}
+
+#wrapper.narrow {
+margin: 0 auto;
+width: 980px;
+}
+
+#frame {
+margin: 0 auto;
+padding: 0 10px;
+}
+
+#frame.narrow {
+width: 980px;
+}
+
+#contents {
+margin: 0 auto;
+padding: 10px 0 50px 0;
+}
+
+#contents.narrow {
+width: 1000px;
+}
+
+#contents.sNarrow {
+width: 600px;
+}
+
+#contents .leftCol {
+float: left;
+padding: 0 10px;
+width: 210px;
+}
+
+#contents .rightCol {
+float: right;
+padding: 0 10px;
+width: 300px;
+}
+
+#contents .rightCol.narrow {
+float: right;
+padding: 0 10px;
+width: 210px;
+}
+
+#contents .mainCol {
+overflow: hidden;
+padding: 0 10px;
+}
+
+#frame #contents .mainCol {
+padding: 0;
+}
+
+#contents .contentsHead {
+padding: 0 10px;
+position: relative;
+}
+
+#frame #contents .contentsHead {
+padding: 0;
+}
+
+#contents .contentsHead h1 {
+font-size: 28px;
+font-weight: normal;
+line-height: 1.2;
+}
+
+#contents .contentsHead .caption {
+font-size: 12px;
+margin-top: 15px;
+}
+
+#contents .mainCol .contentsHead {
+padding: 0;
+}
+
+#contents #leftCol {
+float: left;
+padding: 0 10px;
+width: 210px;
+}
+
+#contents #rightCol {
+float: right;
+padding: 0 10px;
+width: 300px;
+}
+
+#contents #mainCol {
+overflow: hidden;
+padding: 0 10px;
+_zoom: 1;/* IE6 */
+}
+
+#frame #contents #mainCol {
+padding: 0;
+}
+
+#contents .mFrameTbl,
+#contents .innerFrameTbl {
+width: 100%;
+}
+
+#contents .mFrameColL {
+padding: 0 20px 0 0;
+width: 210px;
+}
+
+#contents .mFrameColMain {
+}
+
+#contents .mFrameColR {
+padding: 0 0 0 20px;
+width: 280px;
+}
+
+.txtArea .ttl {
+text-decoration: underline;
+}
+
+#contents .contentsCol .mainCol {
+float: right;
+padding-left: 0%;
+width: 100%;
+}
+
+#contents .contentsCol .mainCol .mainColInner {
+padding-left: 10px;
+}
+
+
+#dpu1008 .moreview {
+margin-top: 10px;
+}
+
+.mainCol .mainColInner .contentsHead {
+margin: 15px 0 50px 0;
+}
+
+#contents .contentsCol .mainCol .mainColInner {
+//padding-left: 5px;
+}
+
+#contents .mainCol {
+//padding: 0 5px;
+}
+
+#contents .contentsCol .leftCol {
+}
+
+#contents .mainCol .section .rcmWidget.col03 a {
+text-decoration: underline;
+}
+
+#contents .contentsHead h2 {
+font-size: 28px;
+font-weight: normal;
+line-height: 1.2;
+}
+
+.rcmBlock .inner .imgContainer .imgLink .brandImg {
+float: left;
+margin: 0 20px 15px 0;
+width: 100px;
+}
+
+.rcmBlock .inner .imgContainer .imgLink .captionLink {
+text-decoration: underline;
+}
+
+#contents .contentsCol .leftCol {
+float: left;
+margin-left: -240px;
+padding: 0 10px;
+width: 210px;
+}
+
+#contents .mainCol .section .rcmWidget.col03 a {
+text-decoration: underline;
+}
+
+.rcmCategoryBlock .rcmCategoryBlockLink {
+text-decoration: none;
+}
+
+.rcmCategoryBlock .rcmCategoryBlockLink .catlg_category_title {
+font-size: 14px;
+font-weight: bold;
+padding-left: 100px;
+text-decoration: underline;
+}
+
+.rcmCategoryBlock .inner.noImg .rcmCategoryBlockLink .catlg_category_title {
+padding-left: 0;
+}
+
+.rcmCategoryBlock .inner .caption {
+color: #333435;
+font-size: 12px;
+line-height: 14px;
+}
+
+.rcmCategoryBlock .inner .imgContainer .brand {
+margin-top: 10px;
+}
+
+#contents .contentsHead h2 {
+font-size: 28px;
+font-weight: normal;
+line-height: 1.2;
+}
+
+.section .tileTypeList {
+width: 100%;
+}
+
+#contents .contentsCol {
+padding-left: 240px;
+}
+
+#contents .contentsHead {
+margin: 0 0 30px 0;
+}
+
+.srcResultBox {
+float: left;
+margin-right: -600px;
+width: 100%;
+}
+
+.mainCol .mainColInner .section {
+margin-bottom: 30px;
+}
+
+.toTopNav strong {
+font-weight: normal;
+}
+
+#contents .contentsCol.singleCol {
+padding-left: 10px;
+}
+
+
+.mainColInner .section.mainView {
+font-size: 12px;
+}
+
+.sectionMview {
+font-size: 12px;
+margin-bottom:10px;
+text-align: right;
+text-decoration: none;
+}
+
+.fixSideBanner .sideBnrUnit {
+margin-top: 15px;
+}
+
+.fixSideBanner .sideBnrUnit:first-child {
+margin-top: 0px;
+}
+
+.leftCol .sideBnrUnit .image img {
+max-width: 200px;
+width: auto;
+}
+
+#contents .mainCol .externalInputFreeArea>.alignC img,
+#contents .mainCol .externalInputFreeArea>.alignC a img,
+#contents .mainCol .externalInputHeadline>.caption .alignC a img,
+#contents .mainCol .externalInputHeadline>.caption a img {
+height: auto;
+max-width: 100%;
+}
+
+.mainCol .section .blockHeader h3 {
+line-height: 1.4;
+}
+
+.leftCol .sideContainer h2 {
+font-size: 14px;
+font-weight: normal;
+line-height: 1.4;
+margin-bottom: 0;
+}
+
+#smpParts,
+.smpParts {
+display: none;
+}

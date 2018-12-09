@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.js_carousel_list {
+position: relative;
+padding: 0 0 10px 0;
+/zoom: 1;
+}
+
+#productDetail .js_carousel_list {
+position: relative;
+padding: 10px 0 35px 0;
+/zoom: 1;
+}
+
+
+.js_carousel_list .js_carousel_contents {
+clear: both;
+height: auto;
+margin: 0 40px;
+position: relative;
+}
+.js_carousel_list .js_carousel_contents.owl-carousel-tall {
+clear: both;
+height: auto;
+margin: 0 40px;
+position: relative;
+}
+
+.js_carousel_list .js_carousel_prev,
+.js_carousel_list .js_carousel_next {
+position: absolute;
+top: 0;
+background: #FFF;
+height: 100%;
+/height: 300px;
+}
+.js_carousel_list .js_carousel_prev {
+left: 0;
+}
+.js_carousel_list .js_carousel_next {
+right: 0;
+}
+
+.js_carousel_list .js_carousel_prev .js_carousel_pb_box,
+.js_carousel_list .js_carousel_next .js_carousel_pb_box {
+position: relative;
+width: 30px;
+height: 100%;
+}
+
+.js_carousel_list .js_carousel_prev .js_carousel_pb_box .js_carousel_pb,
+.js_carousel_list .js_carousel_next .js_carousel_pb_box .js_carousel_pb {
+position: absolute;
+top: 50%;
+left: 0;
+width: 30px;
+height: 80px;
+margin: -40px 0 0 0;
+}
+.js_carousel_list .js_carousel_prev .js_carousel_pb_box .js_carousel_pb {
+background: url(../img/btnCarouselListPagn.png) no-repeat 0 0;
+}
+.js_carousel_list .js_carousel_prev:hover .js_carousel_pb_box .js_carousel_pb {
+background-position: 0 -80px;
+}
+.js_carousel_list .js_carousel_next .js_carousel_pb_box .js_carousel_pb {
+background: url(../img/btnCarouselListPagn.png) no-repeat -30px 0;
+}
+
+.js_carousel_list .js_carousel_next:hover .js_carousel_pb_box .js_carousel_pb {
+background-position: -30px -80px;
+}
+
+.carouselList .owl-carousel-elem {
+margin: 0 6px 0 0;
+width: 196px;
+}
+
+.carouselList .owl-carousel-elem .inner {
+padding: 10px;
+}
+
+.carouselList.selectableList .owl-carousel-elem .inner {
+padding: 10px;
+}
+
+.carouselList .owl-carousel-elem .ppSlctr {
+font-size: 11px;
+position: absolute;
+bottom: 10px;
+left: 10px;
+}
+
+.carouselList .owl-carousel-elem .pImg {
+height: 100px;
+/height: auto;
+margin: 0 0 10px 0;
+}
+
+.carouselList .owl-carousel-elem .pImg img {
+max-width: 100px;
+max-height: 100px;
+}
+
+.carouselList .owl-carousel-elem .pName {
+font-size: 12px;
+}
+
+.carouselList .owl-carousel-elem .pName .brand {
+overflow: hidden;
+white-space: nowrap;
+word-wrap: normal;
+text-overflow: ellipsis;
+}
+
+.carouselList .owl-carousel-elem .pInfo {
+font-size: 12px;
+margin: 3px 0 0 0;
+letter-spacing: .4px
+}
+
+.carouselList .owl-carousel-elem .avgCR {
+margin: 3px 0 0 0;
+}
+
+.carouselList .owl-carousel-elem .iconLoading {
+position: absolute;
+top: 50%;
+left: 50%;
+margin: -8px 0 0 -8px;
+}
+

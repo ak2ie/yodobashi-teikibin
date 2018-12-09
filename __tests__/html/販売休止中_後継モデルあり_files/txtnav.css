@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.txtnav {
+font-size: 12px;
+}
+
+.pReBtn {
+margin: 0;
+}
+
+.breadcrumbs {
+float: left;
+}
+
+.breadcrumbs li {
+margin: 0 5px 0 0;
+padding: 0;
+display: inline-block;
+/display: inline;
+/zoom: 1;
+vertical-align: middle;
+}
+
+.bcKwIptFrame {
+position: relative;
+border-width: 1px;
+border-style: solid;
+border-color: #666 #CCC #CCC #CCC;
+border-radius: 2px;
+padding: 3px 6px;
+}
+
+.bcKwIptFrame.active {
+padding: 3px 20px 3px 6px;
+}
+
+.bcKwIptFrame input {
+width: 80px;
+transition: all 0.5s ease 0s;
+}
+
+.bcKwIptFrame input::-ms-clear {
+display: none;
+}
+
+.bcKwIptFrame.active input {
+display: block;
+width: 160px;
+}
+
+.bcKwIptFrame .btnClear {
+position: absolute;
+top: 50%;
+right: 2px;
+margin: -8px 0 0 0;
+transition: all 0.5s linear 0.5s;
+}
+
+.snsNavInner {
+display: inline-block;
+/display: inline;
+/zoom: 1;
+margin-left: 10px;
+}
+
+.txtnav .breadcrumbs li a span {
+line-height: 26px;
+}
+
+.snsTitle {
+display: inline-block;
+font-size: 12px;
+line-height: 36px;
+margin-left: 10px;
+vertical-align: top;
+}
+
+li.bcKwIptFrameList .bcKwIptFrame {
+float: left;
+margin-right:10px
+}
+
+li.bcKwIptFrameList .yBtn.yBtnXSmall {
+float: right;
+}
+
+.snsNav {
+float: right;
+height: 36px;
+margin-bottom: 5px;
+position: relative;
+right: 10px;
+}
+
+#header .snsNav {
+bottom: -10px;
+margin-bottom: 0;
+}
+
+.txtnav {
+box-sizing:border-box;
+padding:10px 263px 10px 10px;
+}
+
+.txtnav-fullWidth {
+box-sizing:border-box;
+font-size:12px;
+padding:10px;
+}

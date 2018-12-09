@@ -1,0 +1,18 @@
+{
+  "appName": {
+    "message": "よどばし定期便",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "定期便",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "ヨドバシ.comの商品を定期的に購入できます。",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "よどばし定期便",
+    "description": "The title of the browser action button"
+  }
+}

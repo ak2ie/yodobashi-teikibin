@@ -1,0 +1,146 @@
+//-------------------------------------------------------------------------------
+$.miniCarousel = function(conf) {
+	this.cslBody = conf.cslBody;
+	this.prevBtn = conf.prevBtn;
+	this.nextBtn = conf.nextBtn;
+	this.displayCount = conf.displayCount;
+	this.blockList = new Array();
+	this.plusIcon = null;
+	this.currentPage = 0;
+};
+//-------------------------------------------------------------------------------
+$.miniCarousel.prototype = {
+	init: function() {
+		this.bindPgnBtn();
+	},
+	//-------------------------------------------------------------------------------
+	bindPgnBtn: function() {
+		this.prevBtn.unbind("click").click({csl: this}, function(e) {
+			e.data.csl.goPrev();
+		});
+		
+		this.nextBtn.unbind("click").click({csl: this}, function(e) {
+			e.data.csl.goNext();
+		});
+	},
+	//-------------------------------------------------------------------------------
+	getLastPageNo: function() {
+		return Math.ceil(this.blockList.length / this.displayCount) - 1;
+	},
+	//-------------------------------------------------------------------------------
+	goNext: function() {
+		if(this.blockList.length <= this.displayCount) {
+			return;
+		}
+		
+		if(this.displayCount * (this.currentPage + 1) < this.blockList.length) {
+			this.currentPage++;
+			
+		} else {
+			this.currentPage = 0;
+		}
+		
+		this.display(-1);
+	},
+	//-------------------------------------------------------------------------------
+	goPrev: function() {
+		if(this.blockList.length <= this.displayCount) {
+			return;
+		}
+
+		if(this.currentPage > 0) {
+			this.currentPage--;
+			
+		} else {
+			this.currentPage = this.getLastPageNo();
+		}
+		
+		this.display(-1);
+	},
+	//-------------------------------------------------------------------------------
+	addBlock: function(block) {
+		this.blockList.push(block);
+		this.display(this.blockList.length - 1);
+	},
+	//-------------------------------------------------------------------------------
+	removeBlock: function(index) {
+		var className = $(this.blockList[index]).attr("class");
+		var block = $("." + className, this.cslBody);
+		this.blockList.splice(index, 1);
+
+		var _this = this;
+		var callBack = function() {
+			_this.display(index);
+		};
+		if(block.length) {
+			$.utils.animShowFadeArea(block, false);
+			$.utils.animShowFadeArea(block.prev(), false);
+		}
+		setTimeout(callBack, 200);
+	},
+	//-------------------------------------------------------------------------------
+	display: function(fadeinIndex) {
+		if(!this.cslBody.length) {
+			return;
+		}
+		
+		if(this.currentPage > this.getLastPageNo()) {
+			this.currentPage = this.getLastPageNo();
+		}
+		
+		this.toggleBtnDisplay();
+
+		var displayFrom = this.displayCount * this.currentPage;
+		if(this.currentPage > 0 && this.blockList.length - this.displayCount < displayFrom) {
+			displayFrom = this.blockList.length - this.displayCount;
+		}
+		
+		this.cslBody.empty();
+		for(i = 0; i < this.displayCount; i++) {
+			if(displayFrom + i < this.blockList.length) {
+				
+				if(i > 0 && this.plusIcon !== null) {
+					var plus = $(this.plusIcon);
+					plus.hide();
+					this.cslBody.append(plus);
+					
+					if(fadeinIndex === -1 || fadeinIndex === displayFrom + i) {
+						$.utils.animShowFadeArea(plus, true);
+						
+					} else {
+						plus.show();
+					}
+					plus.removeAttr("style");
+				}
+				
+				var blk = $(this.blockList[displayFrom + i]);
+				blk.hide();
+				this.cslBody.append(blk);
+				
+				if(fadeinIndex === -1 || fadeinIndex === displayFrom + i) {
+					$.utils.animShowFadeArea(blk, true);
+					
+				} else {
+					blk.show();
+				}
+				blk.removeAttr("style");
+			}
+		}		
+	},
+	//-------------------------------------------------------------------------------
+	toggleBtnDisplay: function() {
+		if(this.currentPage === 0) {
+			this.prevBtn.hide();
+			
+		} else {
+			this.prevBtn.show();
+		}
+		
+		if(this.currentPage === this.getLastPageNo()) {
+			this.nextBtn.hide();
+			
+		} else {
+			this.nextBtn.show();
+		}
+	}
+};

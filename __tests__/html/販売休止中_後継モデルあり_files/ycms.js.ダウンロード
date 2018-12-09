@@ -1,0 +1,33 @@
+/*
+ *
+ * Yodobashi CMS JSON
+ * 2011.03.29
+ *
+ */
+$(function(){
+	var cd='';
+	var key='cmscontentsheadercode-';
+	var elems=$('*').get();
+	for(var i=0; i<elems.length; i++){
+		var elem=elems[i].getAttribute('class')||elems[i].getAttribute('className');
+		if(elem!=null&&elem.indexOf(key)!=-1){
+			cd=elem.substring(elem.indexOf(key)+key.length,elem.length);
+			break;
+		}
+	}
+	if (cd!=''){
+		var target='.'+key+cd;
+		$.jsonp({
+			//
+			"url":"http://www.yodobashi.com/ws/api/cms/contents?code="+cd+"&callback=?",
+			"success":function(dt){
+				var jdt=eval(dt);
+				$(target).each(function(){
+					$(this).html(jdt.item.contents);
+				});
+			},
+			"error":function(d,msg){
+			}
+		});
+	}
+});

@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+div.galleryImgArea {
+float: left;
+background: #000;
+height: 100%;
+position: relative;
+}
+
+div.galleryInfoArea {
+float: right;
+background: #FFF;
+height: 100%;
+position: relative;
+word-wrap: break-word;
+width: 400px;
+}
+
+div.galleryDetail {
+cursor: pointer;
+max-height: 2048px;
+position: relative;
+}
+
+div.galleryDetail span {
+display: inline-block;
+}
+
+div.galleryDetail img {
+display: inline-block;
+height: auto;
+image-rendering: optimizequality;
+max-height: 100%;
+max-width: 100%;
+vertical-align: middle;
+width: auto;
+}
+
+a.galleryPagn {
+position: absolute;
+top: 0;
+height: 100%;
+opacity: 0;
+transition: all 0.3s ease 0s;
+}
+
+a.galleryPagn.prev {
+left: 0;
+width: 30%;
+}
+
+a.galleryPagn.next {
+right: 0;
+width: 70%;
+}
+
+a.galleryPagn i {
+position: absolute;
+top: 50%;
+margin: -30px 0 0 0;
+width: 40px;
+height: 60px;
+display: block;
+}
+
+div.galleryImgArea:hover a.galleryPagn {
+opacity: 0.3;
+filter: alpha(opacity=30);
+-ms-filter: "alpha(opacity=30)";
+zoom: 1;
+}
+
+div.galleryImgArea a.galleryPagn:hover {
+opacity: 1;
+filter: alpha(opacity=100);
+-ms-filter: "alpha(opacity=100)";
+zoom: 1;
+}
+
+a.galleryPagn.prev i {
+background: url(../img/iconGalleryArwPrev.png) no-repeat 0 0;
+left: 20px;
+}
+
+a.galleryPagn.next i {
+background: url(../img/iconGalleryArwNext.png) no-repeat 0 0;
+right: 20px;
+}
+
+div.galleryImgHoverInfo {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+font-size: 12px;
+color: #FFF;
+text-align: center;
+line-height: 36px;
+background: #222;
+background: rgba(0,0,0,0.4);
+}
+
+div.gInfoHead {
+padding: 15px;
+margin: 0;
+border-bottom: 1px solid #D3D4D5;
+}
+
+div.gInfoHead div.pName {
+font-size: 13px;
+}
+
+div.gInfoBody {
+}
+
+div.gImgThumb {
+background: #F5F5F5;
+height: 100%;
+}
+
+div.gImgThumb div.gInfoBodyInner {
+overflow: auto;
+}
+
+div.gInfoBody.gInfoScrollLift {
+padding: 0 0 41px 0;
+}
+
+div.galleryInfoArea div.scrollableArea {
+position: relative;
+width: 100%;
+height: 100%;
+outline: none;
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+div.scrollableArea.comListUnit {
+margin: 0;
+}
+
+div.scrollableArea.comListUnit div.popoverNavBtn {
+top: 10px;
+right: 10px;
+}
+
+div.galleryInfoArea div.scrollableArea div.cntrbtTxt {
+padding: 0 15px 0 0;
+}
+
+div.galleryInfoArea div.scrollableAreaInner {
+padding: 15px 15px 0;
+}
+
+div.galleryInfoArea div.comCmtScrollLiftBox {
+position: absolute;
+bottom: 0;
+right: 0;
+border-top: 1px solid #D3D4D5;
+background: #EFEFEF;
+}
+
+div.galleryInfoArea div.comCmtScrollLiftBox {
+width: 100%;
+}
+
+div.galleryInfoArea div.comCmtScrollLiftBox div.comCmtScrollLiftBoxInner {
+padding: 5px;
+}
+
+div.galleryImgUnit.ctlgImgGallery div.galleryImgArea {
+background: #FFF;
+}
+
+div.galleryImgUnit.ctlgImgGallery div.galleryInfoArea {
+width: 300px;
+border-left: 1px solid #D3D4D5;
+}
+
+div.galleryThumbList li {
+float: left;
+position: relative;
+cursor: pointer;
+margin: 0 5px 5px 0;
+height: 62px;
+width: 62px;
+text-align: center;
+}
+
+div.galleryThumbList li div.imgFrame {
+overflow: hidden;
+height: 62px;
+width: 62px;
+}
+
+div.galleryThumbList li div.overlayFrame {
+position: absolute;
+top: 0;
+left: 0;
+height: 60px;
+width: 60px;
+border: 1px solid #D3D4D5;
+}
+
+div.galleryThumbList li:hover div.overlayFrame {
+border: 1px solid #333435;
+}
+
+div.galleryThumbList li.active div.overlayFrame {
+border: 3px solid #F00;
+height: 56px;
+width: 56px;
+}
+
+div.galleryThumbList li img {
+}
+
+div.galleryThumbList li.productImg div.imgFrame {
+padding: 5px;
+height: 52px;
+width: 52px;
+}
+
+div.galleryThumbList li.productImg img {
+max-width: 52px;
+max-height: 52px;
+}
+
+div.ctlgPuGlry div.galleryImgArea {
+background: #FFF !important;
+}
+
+div.ctlgPuGlry div.galleryDetail td.glryMainImg {
+height: 410px;
+}
+
+div.ctlgPuGlry div.galleryDetail div.pImg img {
+max-height: 410px;
+max-width: 410px;
+}
+
+div.glryThumbList {
+text-align: center;
+}
+
+div.glryThumbList li {
+display: inline-block;
+/display: inline;
+/zoom: 1;
+margin: 0 5px;
+vertical-align: middle;
+}
+
+div.glryThumb {
+}
+
+div.glryThumb a {
+width: 60px;
+height: 60px;
+border: 1px #CCC solid;
+background: #FFF;
+padding: 5px;
+display: block;
+}
+
+div.glryThumb a:hover {
+border: 1px #666 solid;
+}
+
+div.glryThumb table {
+table-layout: fixed;
+}
+
+div.glryThumb td {
+width: 60px;
+height: 60px;
+vertical-align: middle;
+text-align: center;
+}
+
+div.glryThumb img {
+max-height: 60px;
+max-width: 60px;
+display: block\9;
+/display: inline;
+}
+
+div.glryThumb img:not(:target) {
+display: inline\9;
+}
+
+div.puBox.galleryBox div.pagn a {
+padding: 0 8px;
+line-height: 30px;
+text-decoration: none;
+display: block;
+border: 1px rgba(0,0,0,0) solid;
+background: #FFF;
+color: #333;
+}
+
+div.puBox.galleryBox div.pagn a.prev {
+background: url(../img/iconPagnPrev.png) no-repeat center center;
+height: 30px;
+width: 30px;
+padding: 0;
+border: 1px rgba(0,0,0,0) solid;
+}
+
+div.puBox.galleryBox div.pagn a.next {
+background: url(../img/iconPagnNext.png) no-repeat center center;
+height: 30px;
+width: 30px;
+padding: 0;
+border: 1px rgba(0,0,0,0) solid;
+}
+
+div.puBox.galleryBox div.pagn a:hover {
+border: 1px #666 solid;
+background-color: #EFEFEF;
+text-decoration: none;
+}
+
+div.galleryDetail table {
+width: 100%;
+}
+
+div.galleryDetail td.glryGuideArw {
+width: 30px;
+}
+
+div.galleryDetail td {
+text-align: center;
+vertical-align: middle;
+}
